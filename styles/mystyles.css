@@ -1,0 +1,11 @@
+h1{
+    font-size: 48px;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+  img{
+    height: 100px;
+  }
