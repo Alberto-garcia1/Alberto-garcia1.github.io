@@ -16,10 +16,21 @@ img {
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  font-family: UNCbody;
+  background-color: #ffffff;
 }
 h1 {
   text-align: center;
   color: #e74c3c;
+  font-family: UNCtitle;
+}
+
+@font-face {
+  font-family: UNCtitle;
+  src: url(../fonts/Arvo.ttf);
+}
+
+@font-face {
+  font-family: UNCbody;
+  src: url(../fonts/OpenSans.ttf);
 }
