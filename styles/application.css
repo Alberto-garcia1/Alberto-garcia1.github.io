@@ -1,0 +1,63 @@
+  body {
+    font-family: 'BodyFont', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-family: 'HeadingFont', serif;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+  }
+  
+  h2 {
+    font-family: 'HeadingFont', serif;
+    font-size: 2rem;
+    color: #34495e;
+    margin-top: 20px;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  img {
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+  @font-face {
+    font-family: UNCtitle;
+    src: url(../fonts/Arvo.ttf);
+  }
+  
+  @font-face {
+    font-family: UNCbody;
+    src: url(../fonts/OpenSans.ttf);
+  }
