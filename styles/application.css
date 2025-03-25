@@ -28,6 +28,9 @@
   img {
     border-radius: 10px;
     margin: 10px;
+    gap: 15px; /* Adjust spacing between images */
+    margin: 20px 0;
+    width: 400px;
   }
   
   ul {
