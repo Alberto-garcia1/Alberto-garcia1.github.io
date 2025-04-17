@@ -14,6 +14,14 @@ header {
     margin-bottom: 40px;
 }
 
+.unco-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2c3e50;
+}
+
 h1 {
     font-family: 'Roboto Slab', serif;
     color: #2c3e50;
