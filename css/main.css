@@ -1,66 +1,198 @@
+/* Custom Web Font with mobile-first approach */
 body {
-    font-family: 'BodyFont', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 16px;
+  min-height: 100vh; /* Use 100vh as fallback */
+  min-height: 100dvh; /* Prefer dynamic viewport units */
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.unco-img {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2c3e50;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #2c3e50;
+  margin: 10px 0;
+  font-size: 1.8rem;
+}
+
+/* main.css */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Style for thumbnail images */
+.thumbnail {
+  width: 100px; /* Default width */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Responsive thumbnail */
+@media (max-width: 768px) {
+  .thumbnail {
+      width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .thumbnail {
+      width: 60px;
+  }
+}
+
+/* Navigation Styles */
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 10px 0;
+  background-color: #2c3e50;
+  border-radius: 5px;
+  margin: 0 0 20px;
+}
+
+nav li {
+  margin: 5px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+nav a:hover {
+  background-color: #34495e;
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  font-size: 1.4rem;
+}
+
+/* Education and Experience Styles */
+.education-item, .job {
+  margin-bottom: 15px;
+}
+
+.degree, .date {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+/* Skills Grid Layout */
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 15px;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1; 
+  width: 100%;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  body {
+      font-size: 18px;
+      padding: 20px;
+  }
+  
+  .unco-img {
+      width: 150px;
+      height: 150px;
   }
   
   h1 {
-    font-family: 'HeadingFont', serif;
-    font-size: 2.5rem;
-    color: #2c3e50;
-    text-align: center;
+      font-size: 2.2rem;
   }
   
   h2 {
-    font-family: 'HeadingFont', serif;
-    font-size: 2rem;
-    color: #34495e;
-    margin-top: 20px;
+      font-size: 1.8rem;
   }
   
-  p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+  nav ul {
+      flex-direction: row;
+      justify-content: center;
+      padding: 0;
   }
   
-  img {
-    border-radius: 10px;
-    margin: 10px;
-    gap: 15px; /* Adjust spacing between images */
-    margin: 20px 0;
-    width: 400px;
+  nav li {
+      margin: 0 15px;
   }
   
-  ul {
-    list-style-type: square;
-    padding-left: 20px;
+  section {
+      padding: 20px;
   }
   
-  ul li {
-    margin-bottom: 10px;
+  .skills-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  body {
+      max-width: 1200px;
   }
   
-  iframe {
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
+  header {
+      margin-bottom: 40px;
   }
   
   footer {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 0.9rem;
-    color: #777;
+      margin-top: 40px;
+      padding: 20px;
   }
-
-  @font-face {
-    font-family: UNCtitle;
-    src: url(../fonts/Arvo.ttf);
-  }
-  
-  @font-face {
-    font-family: UNCbody;
-    src: url(../fonts/OpenSans.ttf);
-  }
+}
